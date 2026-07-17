@@ -6,7 +6,7 @@
 #    By: wshou-xi <wshou-xi@student.42kl.edu.my>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/04 16:40:40 by wshou-xi          #+#    #+#              #
-#    Updated: 2026/07/17 11:54:26 by wshou-xi         ###   ########.fr        #
+#    Updated: 2026/07/17 12:01:18 by wshou-xi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,6 +39,7 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
+	cp $(NAME) script
 
 $(OBJS_DIR)/%.o: %.c
 	mkdir -p $(dir $@)
