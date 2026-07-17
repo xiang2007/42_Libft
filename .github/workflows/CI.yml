@@ -36,4 +36,5 @@ jobs:
 
             - name: valgrind-check
               run: |
+                cd script
                 valgrind ./test
