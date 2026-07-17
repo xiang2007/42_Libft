@@ -13,7 +13,12 @@ jobs:
         steps:
             - name: Checkout the code
               uses: actions/checkout@v7
-            
+
+            - name: Install Dependencies
+              run: |
+                sudo apt-get update
+                sudo apt-get install -y build-essential cmake valgrind ${{ matrix.compiler }}
+
             - name: Norminette
               uses: 42School/norminette@3.3.59
               with:
