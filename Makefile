@@ -6,12 +6,12 @@
 #    By: wshou-xi <wshou-xi@student.42kl.edu.my>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/04 16:40:40 by wshou-xi          #+#    #+#              #
-#    Updated: 2026/07/16 22:21:14 by wshou-xi         ###   ########.fr        #
+#    Updated: 2026/07/17 11:54:26 by wshou-xi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
-CFLAGS = -Wall -Werror -Wextra -fPIC -Iincludes -fsanitize=address
+CFLAGS = -Wall -Werror -Wextra -fPIC -Iincludes
 AR = ar rcs
 RM = rm -rf
 

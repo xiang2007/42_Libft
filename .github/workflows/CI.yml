@@ -13,11 +13,18 @@ jobs:
         steps:
             - name: Checkout the code
               uses: actions/checkout@v7
-
-            - name: run make
-              run: make
             
             - name: Norminette
               uses: 42School/norminette@3.3.59
               with:
                 args: src/ bonus/ includes/ '-RCheckForbiddenSourceHeader'
+
+            - name: test
+              run: |
+                cd script
+                make
+                ./test
+
+            - name: valgrind-check
+              run: |
+                valgrind ./test
