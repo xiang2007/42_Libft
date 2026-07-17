@@ -19,6 +19,10 @@ jobs:
               with:
                 args: src/ bonus/ includes/ '-RCheckForbiddenSourceHeader'
 
+            - name: make
+              run: |
+                make
+
             - name: test
               run: |
                 cd script
